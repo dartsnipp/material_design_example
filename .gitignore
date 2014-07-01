@@ -10,4 +10,7 @@ packages/
 *.js.map
 
 # Include when developing application packages.
+packages
 pubspec.lock
+
+.buildlog

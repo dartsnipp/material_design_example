@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample app</title>
+    <script src="packages/web_components/platform.js"></script>
+    <script src="packages/web_components/dart_support.js"></script>
+    <!-- Import material design element. -->
+    <link rel="import" href="packages/core_elements/core_toolbar.html">
+    <link rel="import" href="packages/core_elements/core_header_panel.html">
+    <link rel="import" href="packages/core_elements/core_icons.html">
+    <link rel="import" href="packages/paper_elements/paper_icon_button.html">
+    <link rel="import" href="packages/paper_elements/paper_tabs.html">
+    <link rel="import" href="packages/paper_elements/paper_tabs.html">
+    <link rel="import" href="packages/paper_elements/paper_icon_button.html">
+    <link rel="import" href="packages/paper_elements/paper_checkbox.html">
+    <link rel="import" href="packages/paper_elements/paper_toggle_button.html">
+    <link rel="import" href="packages/paper_elements/paper_radio_group.html">
+    <link rel="import" href="packages/paper_elements/paper_fab.html">
+    <link rel="import" href="packages/paper_elements/paper_slider.html">
+    <link rel="import" href="packages/paper_elements/paper_progress.html">
+    <link rel="import" href="packages/paper_elements/paper_input.html">
+
+    <script type="application/dart" src="material_design_example.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+
+    <style type="text/css">
+      body {
+        font-family: sans-serif;
+      }
+      core-header-panel {
+        background: white;
+        height: 100%;
+        width: 100%;
+      }
+      core-toolbar {
+        background-color: #00BFFF;
+        color: #FFF;
+        fill: #FFF;
+      }
+      p {
+        margin: 10px;
+        padding: 10px 10px;
+      }
+    </style>
+  </head>
+  <body fullbleed unresolved>
+    <core-header-panel>
+      <core-toolbar class="medium-tall">
+        <paper-icon-button id="navicon" icon="arrow-back"></paper-icon-button>
+        <span flex>Title</span>
+        <paper-icon-button id="searchbutton" icon="menu"></paper-icon-button>
+        <paper-tabs class="bottom fit">
+          <paper-tab>ONE</paper-tab>
+          <paper-tab>TWO</paper-tab>
+        </paper-tabs>
+      </core-toolbar>
+      <p><paper-button label="flat button">Button</paper-button></p>
+      <p><paper-button label="raised button" raisedButton>Button</paper-button></p>
+      <p><paper-checkbox></paper-checkbox></p>
+      <p><paper-checkbox checked></paper-checkbox></p>
+      <p><paper-toggle-button></paper-toggle-button></p>
+      <p>
+        <paper-radio-group selected="small">
+          <paper-radio-button name="small" label="Small"></paper-radio-button>
+          <paper-radio-button name="medium" label="Medium"></paper-radio-button>
+          <paper-radio-button name="large" label="Large"></paper-radio-button>
+        </paper-radio-group>
+      </p>
+      <p><paper-fab icon="favorite"></paper-fab></p>
+      <p><paper-slider min="10" max="200" value="110"></paper-slider></p>
+      <p><paper-progress id="progress" value="10"></paper-progress></p>
+      <p><paper-input label="Your Name"></paper-input></p>
+    </core-header-panel>
+  </body>
+</html>
